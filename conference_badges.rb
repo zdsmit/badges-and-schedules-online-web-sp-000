@@ -20,5 +20,6 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  batch_badge_creator(attendees).zip(assign_rooms(attendees))
+  printout = batch_badge_creator(attendees).zip(assign_rooms(attendees))
+  puts printout
 end
